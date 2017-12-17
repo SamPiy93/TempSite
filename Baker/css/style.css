@@ -7,7 +7,7 @@
 
 body {
 	line-height: 1.4;
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #67696c;
     font-size: 16px;
     font-weight: 300;
@@ -30,7 +30,8 @@ table {
 	border-spacing: 0;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-weight: 600;
 }
 .section-padding
@@ -88,20 +89,20 @@ h1, h2, h3, h4, h5, h6{
 HEADER 
 ************************************
 ***********************************/
-.header{
+/* .header{ */
     /* background: url('../img/images/banner_1.jpg') no-repeat 100% 100%;
     background-size: cover;
     min-height: 650px;
     position: relative; */
-}
-.bg-color
+/* } */
+/* .bg-color
 {
     background-color: rgba(0, 0, 0, 0.5);
     min-height: 650px;
-}
-#main-header
+} */
+/* #main-header
 {
-}
+} */
 .navbar-default {
     background-color: #ffffff;
     border:0px;
@@ -125,7 +126,7 @@ HEADER
 }
 .navbar-default .navbar-brand {
     color: rgb(0, 0, 0);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
@@ -150,6 +151,9 @@ HEADER
     color: #000000;
     -webkit-transition: color 0.2s ease-out;
     transition: color 0.2s ease-out;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: #be9e21;
@@ -161,24 +165,39 @@ HEADER
 }
 .banner-info
 {
-    background: url('../img/images/KTC_Polish_toll-collection_1.jpg') no-repeat;
+    background: url('../img/images/main_banner.jpg') no-repeat;
     background-size: cover;
     padding-top: 140px;
     padding-left: 10%;
     height: 100vh;
     width: 100vw;
     color: #fff;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
+
+.banner-main
+{
+    background: url('../img/images/road.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 140px;
+    /* padding-left: 10%; */
+    height: 80vh;
+    width: 100vw;
+    color: #fff;
+    /* border: 1px solid black; */
+}
+
 .bnr-title, .bnr-sub-title
 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 h1.bnr-title
 {
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 42px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px; */
 }
 h2.bnr-sub-title
 {
@@ -195,33 +214,36 @@ h2.bnr-sub-title
 {
     text-transform: uppercase;
 
-    color: #fff;
+    color: rgb(0, 0, 0);
     border: 0;
     font-size: 14px;
-    font-weight: 300;
+    /* font-weight: 300; */
     line-height: 24px;
     padding: 10px 30px;
-    border-radius: 60px;
+    border-radius: 10px;
     outline: none !important;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    /* font-weight: 100; */
 }
 
 
 .btn-download
 {
-    background-color: #be9e21;
+    background-color: #fec63d;
 }
 .btn-more, .btn-more:focus
 {
-    border: 1px solid #be9e21;
-    color: #fff;
-    background-color: #be9e21;
+    border: 1px solid #fec63d;
+    color: #000;
+    background-color: #fec63d;
 }
 
 .btn-more:hover {
-    background: #be9e21;
+    background: #fec63d;
     color: #fff;
 }
 
@@ -239,7 +261,7 @@ features
 ***********************************/
 .title, .service-title
 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     text-transform: uppercase;
 }
@@ -390,7 +412,7 @@ ul.service-list li i
     box-sizing:border-box
 }
 .portfolio-item figure h2 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:#fff;
     font-size:20px;
     text-align:left;
@@ -566,27 +588,28 @@ contact
 ***********************************/
 #contact
 {
-    background-color: rgb(73, 84, 105);
+    /* background-color: rgb(73, 84, 105); */
+    background: url('../img/images/Banner1.jpg') no-repeat;
 }
 .btn-submit, .btn-submit:hover, .btn-submit:focus
 {
     background-color: transparent;
     border-radius: 60px;
-    color: #be9e21;
+    color: #fec63d;
     font-weight: 400;
-    border: 1px solid #be9e21;
+    border: 1px solid #fec63d;
     font-size: 14px;
     padding: 6px 20px;
 }
 .form-control
 {
-    background-color: transparent;
+    /* background-color: transparent; */
     border-radius: 0px;
-    color: #be9e21 !important;
-    border-color: #be9e21;
+    color: black !important;
+    border-color: #fec63d;
 }
 .form-control:focus {
-    border-color: #be9e21;
+    border-color: black;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
