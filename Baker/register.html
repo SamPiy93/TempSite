@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Baker Bootstrap Theme</title>
-  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+  <title>Road Development Authority</title>  
 
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
   <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
@@ -17,7 +15,14 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css" />
+  
+  <style>
 
+    .lead {
+        font-size: 15px;
+    }
+  </style>
 </head>
 
 <body>
@@ -43,16 +48,16 @@
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                   <li>
-                    <a href="#main-header">Home</a>
+                    <a href="./index.html">Home</a>
                   </li>
                   <li class="">
-                    <a href="#feature">Projects</a>
+                    <a href="#">Projects</a>
                   </li>
                   <li class="">
-                    <a href="#service">Photo Album</a>
+                    <a href="#">Photo Album</a>
                   </li>
                   <li class="active">
-                    <a href="#portfolio">ETC</a>
+                    <a href="./etc.html">ETC</a>
                   </li>
                 </ul>
               </div>
@@ -66,6 +71,13 @@
     <section id="feature" class="section-padding wow fadeInUp delay-05s">
       <div class="container">
         <div class="row">
+          <div class="col-md-10 col-md-offset-1 text-center" style="color:black; text-align:left">
+              <ul class="breadcrumb" style="background-color:transparent; padding:0px">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./etc.html">ETC</a></li>
+                <li>Registration</li>
+              </ul>
+          </div>
           <div class="col-md-10 col-md-offset-1 text-center" style="color:black; text-align:left">
             <h2 style="font-weight:100">Registration for ETC</h2>
           </div>
@@ -190,7 +202,7 @@
                       <label class="control-label col-lg-1"><input type="radio" name="optradio">No</label>
                   </div>
                   <div>
-                      <button type="button" value="Submit" class="btn btn-more pull-right">Apply</button>
+                      <button type="button" value="Submit" class="btn btn-more pull-right" onClick="showMessage()">Apply</button>
                   </div>
               </form>
           </div>
@@ -207,6 +219,26 @@
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+  
+      <script>
+          function showMessage() {
+              // swal("Success!", "Your application has been submitted!", "success")
+              
+              swal({
+                title: "Success!",
+                text: "Your application has been submitted!",
+                type: "success"
+                // showCancelButton: true,
+                // closeOnConfirm: false,
+                // showLoaderOnConfirm: true
+              }, function () {
+                setTimeout(function () {
+                  window.location.href = "./etc.html";;
+                }, 500);
+              });
+          }
+      </script>
 
 </body>
 

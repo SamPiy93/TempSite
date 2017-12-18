@@ -4,9 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Baker Bootstrap Theme</title>
-    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <title>Road Development Authority</title>
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
     <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
@@ -150,6 +148,10 @@
             background-color: #1CA347;
             border-color: #1CA347;
         }
+
+        .lead {
+            font-size: 15px;
+        }
     </style>
 </head>
 
@@ -176,16 +178,16 @@
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li>
-                                        <a href="#main-header">Home</a>
+                                        <a href="./index.html">Home</a>
                                     </li>
                                     <li class="">
-                                        <a href="#feature">Projects</a>
+                                        <a href="#">Projects</a>
                                     </li>
                                     <li class="">
-                                        <a href="#service">Photo Album</a>
+                                        <a href="#">Photo Album</a>
                                     </li>
                                     <li class="active">
-                                        <a href="#portfolio">ETC</a>
+                                        <a href="#">ETC</a>
                                     </li>
                                 </ul>
                             </div>
@@ -199,8 +201,21 @@
         <section id="feature" class="section-padding wow fadeInUp delay-05s">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center" style="color:black; text-align:left">
-                        <h2 style="font-weight:100">Top Up your account</h2>
+                    <div class="col-md-10 col-md-offset-1 text-center" style="color:black; text-align:left">
+                        <ul class="breadcrumb" style="background-color:transparent; padding:0px">
+                            <li>
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./etc.html">ETC</a>
+                            </li>
+                            <li>Direct Debit</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 text-center" style="color:black; text-align:left; padding-bottom:20px">
+                        <h2 style="font-weight:100">Direct Debit</h2>
                     </div>
                     <div class="col-md-12">
                         <div class="col-md-10 col-md-offset-1">
@@ -304,7 +319,8 @@
 
     <script>
         function showMessage() {
-            swal("Success", "Your request has been forwarded to the bank! You will receive a confirmation SMS once it has been approved!", "success")
+            swal("Success", 'Your request has been forwarded to the bank! \n' +
+                ' You will receive a confirmation SMS once it has been reviewed!', "success")
         }
     </script>
 
