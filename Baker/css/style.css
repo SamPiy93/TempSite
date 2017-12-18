@@ -210,7 +210,7 @@ h2.bnr-sub-title
 {
     font-weight: 300;
 }
-.btn-download, .btn-more, .btn-download:hover, .btn-download:focus, .btn-more:focus
+.btn-download, .btn-more, .btn-download:hover, .btn-download:focus, .btn-more:focus, .btn-cancel, .btn-cancel:focus
 {
     text-transform: uppercase;
 
@@ -243,8 +243,19 @@ h2.bnr-sub-title
 }
 
 .btn-more:hover {
-    background: #fec63d;
+    background: #c79930;
     color: #fff;
+}
+
+.btn-cancel, .btn-cancel:focus
+{
+    border: 1px solid #c0c0c0;
+    color: #000;
+    background-color: #c0c0c0;
+}
+
+.btn-cancel:hover {
+    background: #8a8a8a;
 }
 
 .overlay-detail a i{
@@ -799,4 +810,7 @@ body{
     line-height: 22px;
     text-align: center;
 }
+
+
+
 }

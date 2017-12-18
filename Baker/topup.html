@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Baker Bootstrap Theme</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css" />
+    <style>
+        .panel-login {
+            border-color: #ccc;
+            -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        /* .panel-login>.panel-heading {
+            color: #00415d;
+            border-color: #fff;
+            text-align:center;
+            padding: 0px;
+        } */
+
+        .panel-login>.panel-heading a {
+            text-decoration: none;
+            color: #444444;
+            font-weight: bold;
+            font-size: 15px;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+            width: 100%;
+        }
+
+        .panel-login>.panel-heading .tab-div {
+            height: 15vh;
+            padding-top: 5%;
+            background-color: #7a7a7a;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .panel-login>.panel-heading div.active {
+            color: #fff;
+            background-color: #fec63d;
+            font-size: 18px;
+        }
+
+        .panel-login>.panel-heading hr {
+            /* margin-top: 10px; */
+            margin-bottom: 0px;
+            clear: both;
+            border: 0;
+            height: 1px;
+            background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+            background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+            background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+            background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+        }
+
+        .panel-login input[type="text"],
+        .panel-login input[type="email"],
+        .panel-login input[type="password"] {
+            height: 45px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            -webkit-transition: all 0.1s linear;
+            -moz-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+        }
+
+        .panel-login input:hover,
+        .panel-login input:focus {
+            outline: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border-color: #ccc;
+        }
+
+        .panel-body .top-up-form {
+            font-family: 'Roboto Slab', sans-serif;
+            color: black;
+        }
+
+        .modal-body .top-up-form {
+            font-family: 'Roboto Slab', sans-serif;
+            color: black;
+        }
+
+        .btn-login {
+            background-color: #59B2E0;
+            outline: none;
+            color: #fff;
+            font-size: 14px;
+            height: auto;
+            font-weight: normal;
+            padding: 14px 0;
+            text-transform: uppercase;
+            border-color: #59B2E6;
+        }
+
+        .btn-login:hover,
+        .btn-login:focus {
+            color: #fff;
+            background-color: #53A3CD;
+            border-color: #53A3CD;
+        }
+
+        .forgot-password {
+            text-decoration: underline;
+            color: #888;
+        }
+
+        .forgot-password:hover,
+        .forgot-password:focus {
+            text-decoration: underline;
+            color: #666;
+        }
+
+        .btn-register {
+            background-color: #1CB94E;
+            outline: none;
+            color: #fff;
+            font-size: 14px;
+            height: auto;
+            font-weight: normal;
+            padding: 14px 0;
+            text-transform: uppercase;
+            border-color: #1CB94A;
+        }
+
+        .btn-register:hover,
+        .btn-register:focus {
+            color: #fff;
+            background-color: #1CA347;
+            border-color: #1CA347;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loader"></div>
+    <div id="myDiv">
+        <!--HEADER-->
+        <div class="header">
+            <div class="bg-color">
+                <header id="main-header">
+                    <nav class="navbar navbar-default" style="padding-top: 5px; margin:0px">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#" style="padding-top: 0px; margin-top:0px">
+                                    <img src="img/images/banner.jpg" alt="" width="60%" style="margin: 0px; border:0px solid black">
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="#main-header">Home</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#feature">Projects</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#service">Photo Album</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#portfolio">ETC</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <!--/ HEADER-->
+
+        <section id="feature" class="section-padding wow fadeInUp delay-05s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center" style="color:black; text-align:left">
+                        <h2 style="font-weight:100">Top Up your account</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="panel panel-login">
+                                <div class="panel-heading" style="padding:0px">
+                                    <div class="col-md-6" style="padding:0px">
+                                        <a href="#" id="login-form-link">
+                                            <div style="width: 100%" class="active tab-div">
+                                                Top Up
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6" style="padding:0px">
+                                        <a href="./directDebit.html" id="register-form-link">
+                                            <div style="width: 100%" class="tab-div">
+                                                Direct Debit
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="panel-body" style="background-color:#ebebeb; padding:5%;padding-top:15%">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <form class="form-horizontal top-up-form">
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2" for="email" style="text-align:left">Account No:</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="email" placeholder="Enter Account No." name="email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-sm-2" for="pwd" style="text-align:left">Amount:</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="password" class="form-control" id="pwd" placeholder="Enter Amount" name="pwd">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-offset-2 col-sm-10">
+                                                        <button type="button" class="btn pull-right btn-more" data-toggle="modal" data-target="#myModal">Top Up</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title" >Modal Header</h4>
+                </div> -->
+                <div class="modal-body">
+                    <!-- <div class="container"> -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-8 col-md-offset-2">
+                                <h3 class="modal-title" style="font-weight:400; color:#444444; text-align:center">Payment Information</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-8 col-md-offset-2" style="text-align:center">
+                                <img src="./img/images/credit-card-icons.png" style="width:70%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="form-horizontal top-up-form">
+                                <div class="form-group">
+                                    <label class="control-label col-md-10 col-md-offset-1" for="email" style="text-align:left">PAYMENT TYPE:</label>
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <select class="form-control" id="sel1">
+                                            <!-- <option>Select</option> -->
+                                            <option>Master Card</option>
+                                            <option>Visa</option>
+                                            <option>Maestro</option>
+                                            <option>Visa Electron</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-10 col-md-offset-1" for="pwd" style="text-align:left">NAME ON CARD:</label>
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input type="password" class="form-control" id="pwd" name="pwd">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-10 col-md-offset-1" for="pwd" style="text-align:left">CARD NUMBER:</label>
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input type="password" class="form-control" id="pwd" name="pwd">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-5 col-md-offset-1" for="pwd" style="text-align:left">EXPIRY DATE:</label>
+                                    <label class="control-label col-md-5" for="pwd" style="text-align:left">CVV:</label>
+                                    <div class="col-md-5 col-md-offset-1">
+                                        <input type="password" class="form-control" id="pwd" name="pwd">
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <input type="password" class="form-control" id="pwd" name="pwd">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <button type="button" class="btn btn-cancel pull-left" data-dismiss="modal">CANCEL</button>
+                            <button type="button" class="btn btn-more" data-dismiss="modal" onClick="showMessage()">PAY NOW</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+
+    <script>
+        function showMessage() {
+            swal("Success!", "Your account has been successfully topped up!", "success")
+        }
+    </script>
+
+</body>
+
+</html>

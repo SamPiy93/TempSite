@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
-    
+
 </head>
 
 <body>
@@ -94,8 +94,11 @@
                 <div class="row">
                     <div class="col-md-12 text-center" style="color:black">
                         <h2 class="service-title pad-bt15">What We Do?</h2>
-                        <p class="sub-title pad-bt15">The RDA is the premier highway authority in the country and is responsible for the maintenance and development of the National Highway Network, comprising the Trunk (A Class) roads, Main (B Class) roads and Expressways and the planning, design and construction of new highways, bridges and expressways to augment the existing road network.
-                        <hr class="bottom-line">
+                        <p class="sub-title pad-bt15">The RDA is the premier highway authority in the country and is responsible for the maintenance and
+                            development of the National Highway Network, comprising the Trunk (A Class) roads, Main (B Class)
+                            roads and Expressways and the planning, design and construction of new highways, bridges and
+                            expressways to augment the existing road network.
+                            <hr class="bottom-line">
                     </div>
                 </div>
             </div>
@@ -199,6 +202,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div id="map">
+                            <img src="./img/images/map.png" style="width:100%">
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
@@ -267,14 +271,14 @@
     <script src="contactform/contactform.js"></script>
 
     <script>
-            function myMap() {
+        function myMap() {
             var mapOptions = {
-                center: new google.maps.LatLng(6.8998898,79.9262363),
+                center: new google.maps.LatLng(6.8998898, 79.9262363),
                 zoom: 15,
                 mapTypeId: google.maps.MapTypeId.HYBRID
             }
             var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-            }
+        }
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8qy0tcgllIanSvFzo711_1J1K8I0xnqU&callback=myMap"></script>
